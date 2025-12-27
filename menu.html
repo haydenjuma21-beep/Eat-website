@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background: linear-gradient(135deg, rgb(66, 198, 134), rgb(10, 118, 225));
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            height: 50%;
+        }
+
+        .hero-text {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            color: aliceblue;
+        }
+
+        .hero-text button {
+            position: relative;
+            border-radius: 12px;
+            background-color: rgb(227, 215, 228);
+            display: inline block;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+
+        }
+
+        .hero-text button:hover {
+            background-color: #5a5454;
+            color: white;
+        }
+    </style>
+
+
+
+</head>
+
+<body style="background-color:#5a5454;">
+
+    <div class="container text-white">
+
+        <a href="index.html" class="btn btn-light mt-2">Back to Home</a>
+    </div>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h4><b>OUR MAIN MENU</b></h4>
+            <p>Please pick what to eat from our variety of food selections.</p>
+            <button>pick now</button>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- HEALTHY FOODS -->
+        <section id="healthy" class="mt-5">
+            <h2 class="text-success"><u>Healthy Foods</u></h2>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/chicksalad.jpeg" class="card-img-top food-item" data-name="Chicken Salad"
+                            data-price="500">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Salad</h5>
+                            <p class="card-text">Ksh 500</p>
+                            <button class="btn btn-success add-to-cart mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/fruitbowl.jpeg" class="card-img-top food-item" data-name="Fruit Bowl"
+                            data-price="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruit Bowl</h5>
+                            <p class="card-text">Ksh 300</p>
+                            <button class="btn btn-success add-to-cart mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/protein.jpeg" class="card-img-top food-item" data-name="Protein Sandwitch"
+                            data-price="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Protein Sandwitch</h5>
+                            <p class="card-text">Ksh 250</p>
+                            <button class="btn btn-success add-to-cart mt-2">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/vegan.jpeg" class="card-img-top food-item" data-name="Vegan Sandwitch"
+                            data-price="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegan Sandwitch</h5>
+                            <p class="card-text">Ksh 200</p>
+                            <button class="btn btn-success add-to-cart mt-2">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BREAKFAST -->
+        <section id="breakfast" class="mt-5">
+            <h2 class="text-warning"><u>Breakfast Foods</u></h2>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/pancakes.jpeg" class="card-img-top food-item" data-name="Pancakes"
+                            data-price="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Pancakes</h5>
+                            <p class="card-text">Ksh 300</p>
+                            <button class="btn btn-success add-to-cart mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/omelette.jpeg" class="card-img-top food-item" data-name="Omelette"
+                            data-price="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Omelette</h5>
+                            <p class="card-text">Ksh 250</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/toast.jpeg" class="card-img-top food-item" data-name="Toast" data-price="120">
+                        <div class="card-body">
+                            <h5 class="card-title"> Toast</h5>
+                            <p class="card-text">Ksh 120</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/lumber.jpeg" class="card-img-top food-item" data-name="Lumberjack Breakfast"
+                            data-price="470">
+                        <div class="card-body">
+                            <h5 class="card-title">Lumberjack Breakfast</h5>
+                            <p class="card-text">Ksh 470</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAST FOODS -->
+        <section id="fastfood" class="mt-5">
+            <h2 class="text-danger"><u>Fast Foods</u></h2>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/burger.jpg" class="card-img-top food-item" data-name="Burger" data-price="400">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger</h5>
+                            <p class="card-text">Ksh 400</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/chips.jpg" class="card-img-top food-item" data-name="French Fries"
+                            data-price="200">
+                        <div class="card-body">
+                            <h5 class="card-title">French Fries</h5>
+                            <p class="card-text">Ksh 200</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/pizza.jpeg" class="card-img-top food-item" data-name="Pizza" data-price="1750">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza</h5>
+                            <p class="card-text">Ksh 1750</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/shawarma.jpeg" class="card-img-top food-item" data-name="Shawarma"
+                            data-price="450">
+                        <div class="card-body">
+                            <h5 class="card-title">Shawarma</h5>
+                            <p class="card-text">Ksh 450</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEA FOODS -->
+        <section id="seafood" class="mt-5">
+            <h2 class="text-primary"><u>Sea Foods</u></h2>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="images/friedfish.jpeg" class="card-img-top food-item" data-name="Fried Fish"
+                            data-price="600">
+                        <div class="card-body">
+                            <h5 class="card-title">Fried Fish</h5>
+                            <p class="card-text">Ksh 600</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/lobster.jpeg" class="card-img-top food-item" data-name="Lobster"
+                            data-price="3200">
+                        <div class="card-body">
+                            <h5 class="card-title">Lobster</h5>
+                            <p class="card-text">Ksh 3200</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/soup.jpeg" class="card-img-top food-item" data-name="Sea Soup"
+                            data-price="900">
+                        <div class="card-body">
+                            <h5 class="card-title">Sea Soup</h5>
+                            <p class="card-text">Ksh 900</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="images/tilapia.jpeg" class="card-img-top food-item" data-name="Grilled Tilapia"
+                            data-price="700">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Tilapia</h5>
+                            <p class="card-text">Ksh 700</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BEVERAGES -->
+        <section id="beverages" class="mt-5 mb-5">
+            <h2 class="text-info"><u>Beverages</u></h2>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/juice.jpeg" class="card-img-top food-item" data-name="Fresh Juice"
+                            data-price="180">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Juice</h5>
+                            <p class="card-text">Ksh 180</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/soda.jpeg" class="card-img-top food-item" data-name="Soda" data-price="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Soda</h5>
+                            <p class="card-text">Ksh 150</p>
+                            <button class="btn btn-success add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/wines.jpeg" class="card-img-top food-item" data-name="Wines" data-price="1100">
+                        <div class="card-body">
+                            <h5 class="card-title">Wines</h5>
+                            <p class="card-text">Ksh 1100</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/champagnes.jpeg" class="card-img-top food-item" data-name="Champagne"
+                            data-price="1300">
+                        <div class="card-body">
+                            <h5 class="card-title">Champagne</h5>
+                            <p class="card-text">Ksh 1300</p>
+                            <button class="btn btn-success add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="container mt-5 mb-5 p-4 bg-light rounded">
+        <h3>🛒 Your Order</h3>
+        <ul id="cartItems" class="list-group mb-3"></ul>
+
+        <h4 id="cartTotal">Total: Ksh 0</h4>
+
+        <button class="btn btn-primary" id="checkoutBtn" disabled>
+            Proceed to Pay
+        </button>
+    </div>
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .hero-text button {
+            border: none;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+
+    <style>
+        img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
+
+
+    <title>restaurant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" style="width:40px;"
+                    class="rounded-pill"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html" target="_blank">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Nutritionist</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Reach
+                            us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://wa.me/0784459971" target="_blank">Whatsapp</a>
+                            </li>
+                            <li><a class="dropdown-item" href="mailto:haydenjuma007@gmail.com" target="_blank">Email</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Piccaso Restaurant</h1>
+            <p>Where hunger meets art</p>
+            <a href="form.html" target="_blank"><button>Order Now</button></a>
+        </div>
+    </div>
+
+    <hr>
+    <div class="mb-3">
+        <div class=" mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <marquee bgcolor="orange" direction="left">welcome to our page</marquee>
+                    <br>
+                    <p> When it comes to food and drink, we created a global affair with a smouldering urban grill,
+                        café-bar
+                        and
+                        coffee roastery, an indoor-outdoor farm-to-table dining room and our rooftop Peruvian Melting
+                        Pot –
+                        each
+                        entirely authentic in character and cuisine.</p>
+                    <hr>
+                    <iframe width="100%" height="265" src="video/RestaurantAd.mp4" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <hr>
+
+                    <div class="container mt-3">
+                        <h2><u>Our Food Variety</u></h2>
+                        <div class="list-group">
+                            <a href="menu.html#Healthy Foods" target="_blank"
+                                class="list-group-item list-group-item-action">Healthy
+                                foods</a>
+                            <a href="menu.html#Breakfast Foods" target="_blank"
+                                class="list-group-item list-group-item-action">Breakfast
+                                foods</a>
+                            <a href="menu.html#Beverages" target="_blank"
+                                class="list-group-item list-group-item-action">Beverages</a>
+                            <a href="menu.html#Fast Foods" target="_blank"
+                                class="list-group-item list-group-item-action">Fast
+                                foods</a>
+                            <a href="menu.html#Sea Foods" target="_blank"
+                                class="list-group-item list-group-item-action">Sea
+                                Foods</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8">
+                    <div class="row">
+                        <h1><u>Our Top Picks</u></h1>
+
+
+                        <div class="col-6">
+                            <img src="images/burger.jpg" class="img-thumbnail" width="300" alt="burger"> <br> Beef
+                            Burger/=300
+                        </div>
+
+                        <div class="col-6">
+                            <img src="images/chips.jpg" class="img-thumbnail" alt="chips" width="250"> <br> Chips/=300
+                        </div>
+
+                        <div class="col-6">
+                            <img src="images/pillau.jpg" class="img-thumbnail" alt="pillau" width="310"> <br> Pillau
+                            /=400
+                        </div>
+
+                        <div class="col-6">
+                            <img src="images/ugali.jpg" class="img-thumbnail" alt="ugali" width="270"> <br> Ugali nyama
+                            /=200
+                        </div>
+                        <hr>
+
+                        <p style="border: 2px solid black; border-radius: 12px; padding: 5px; ">We are committed to
+                            providing a smooth
+                            and convenient ordering
+                            experience,
+                            tailored to your
+                            needs. <br>
+                            Every delivery is handled with care, ensuring your food arrives fresh, hot, and on
+                            time.</p>
+
+                        <p style="border: 2px solid black; border-radius: 12px; padding: 5px; ">We are a reliable and
+                            efficient food delivery service provider committed to connecting
+                            customers with their favorite meals quickly and conveniently. <br> With timely deliveries,
+                            excellent customer service, and a wide variety of restaurant options. <br>we ensure a smooth
+                            and
+                            satisfying ordering experience every time</p>
+
+                        <p style="border: 2px solid black; border-radius: 12px; padding: 5px; ">Delicious meals
+                            delivered
+                            right when you need them—fresh, fast, and hassle-free.
+                            <br>Your cravings, our priority. We deliver happiness, one meal at a time.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="fluid p-5 bg-dark text-white text-center">
+        <div class="footer">&copy;2025. All Rights Reserved</div> <br>
+        <h4>Visit Our Socials <span style='font-size:30px;'>&#128077;</span></h4>
+        <a href="https://www.facebook.com/"> <img src="images/fb.jpeg" alt="fb" class="rounded-pill" height="45"></a>
+        <a href="https://x.com/"> <img src="images/x-twitter.jpeg" alt="fb" class="rounded-pill" height="45"></a>
+        <a href="https://www.instagram.com/"> <img src="images/instagram.jpg" alt="fb" class="rounded-pill"
+                height="45"></a> <br>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>QUICK LINKS</h5>
+                    <div class="list-group">
+                        <a href="#">Policies</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Newsletters</a>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6">
+                    <h5>Helpful Links</h5>
+                    <div class="list-group">
+                        <a href="#">Q&A</a>
+                        <a href="#">Rate Us</a>
+                        <a href="#">Report!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

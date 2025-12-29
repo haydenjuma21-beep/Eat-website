@@ -49,6 +49,52 @@
         }
     </style>
 
+
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+</style>
+
+<style>
+    .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+</style>
+
+<style>
+    .food-variety {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.food-variety div {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+    @media (min-width: 768px) {
+  .food-variety {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+</style>
+    
     <style>
         img:hover {
             animation: shake 0.5s;
@@ -333,4 +379,5 @@
 
 
 </html>
+
 
